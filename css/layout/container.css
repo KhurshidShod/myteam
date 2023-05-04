@@ -1,0 +1,5 @@
+.container{
+    /*1440 - 2*165 + 40 = 1150*/
+    max-width: 1150px;
+    margin: 0 auto;
+}
