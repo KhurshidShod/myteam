@@ -113,7 +113,6 @@
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
-
 .about__directors-card img {
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -171,7 +170,7 @@
     font-size: var(--fontSize-15);
 }
 
-.about__directors-card6 p {
+.about__directors-card p {
     text-align: center;
     width: 250px;
     margin-bottom: 15px;
@@ -202,7 +201,7 @@
     height: 100px;
 }
 
-.about__directors-btn6:last-child {
+.about__directors-card:last-child .about__directors-btn {
     background-color: #79C8C7;
 }
 
