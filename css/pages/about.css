@@ -107,6 +107,11 @@
     gap: .5rem;
     position: relative;
     background-color: var(--bgColor-dark);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .about__directors-card img {
@@ -133,6 +138,15 @@
     position: absolute;
     background-color: var(--fontColor-pink);
     bottom: -10%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.about__directors-btn:hover {
+    background-color: var(--fontColor-green);
 }
 
 .about__directors-content h1 {
@@ -142,12 +156,58 @@
     font-weight: 700;
 }
 
-.about__directors-card {
-    
+.about__directors-card h3 {
+    font-size: var(--fontSize-18);
+    color: var(--fontColor-green);
+    font-weight: 700;
+}
+
+.about__directors-card:hover {
+    background-color: var(--bgColor-darker);
+}
+
+.about__directors-card p {
+    color: var(--fontColor-white);
+    font-size: var(--fontSize-15);
+}
+
+.about__directors-card6 p {
+    text-align: center;
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.social i {
+    width: 30px;
+    height: 1px;
+    color: var(--fontColor-white);
+    cursor: pointer;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+.social i:hover {
+    color: var(--fontColor-pink);
+}
+
+.about__directors-socials {
+    display: flex;
+}
+
+.about__directors-card img {
+    width: 100px;
+    height: 100px;
 }
 
 .about__directors-btn6:last-child {
     background-color: #79C8C7;
+}
+
+.about__directors-btn6:hover {
+    background-color: var(--fontColor-pink);
 }
 
 @media (max-width: 900px) {
@@ -171,6 +231,12 @@
     .about__directors-card{
         width: calc(100% / 2 - 2rem);
     }
+    .container__img-2 {
+        width: 65px;
+    }
+    .container__img-3 {
+        width: 45px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -179,5 +245,11 @@
     }
     .about__directors-card{
         width: 95%;
+    }
+    .container__img-2 {
+        width: 45px;
+    }
+    .container__img-3 {
+        width: 25px;
     }
 }
