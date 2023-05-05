@@ -48,8 +48,10 @@ header nav ul li a{
     line-height: 28px;
 }
 header nav .header__contact-btn{
-    color: var(--fontColor-white);
     border-color: var(--fontColor-white);
+}
+header nav .header__contact-btn a{
+    color: var(--fontColor-white);
 }
 #closeNav{
     font-size: var(--fontSize-48);
