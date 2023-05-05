@@ -5,34 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container">
+            <div class="header__logo"><img src="images/myteam.png" alt=""></div>
+            <div class="header__menu">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+            </ul>
+            <button class="header__contact-btn">
+                contact us
+            </button>
+            <div id="closeNav"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div id="openNav"><i class="fa-solid fa-bars"></i></div>
         </nav>
     </header>
     <main>
-        <section id="xurshid">
-            <h5>Lorem. Lorem ipsum dolor sit amet.
-            </h5>
-            <ul>
-                <li>sssdfs</li>
-                <li>sssdfs</li>
-                <li>sssdfs</li>
-                <li>sssdfs</li>
-                <li>sssdfs</li>
-                <li>sssdfs</li>
-                <li>sssdfs</li>
-                <li>sssdfs</li>
-            </ul>
-        <nav></nav>
-    </header>
-    <main>
-        <section id="xurshid">
-            <h1>Xurshid</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis facere natus voluptatem voluptatum maxime officia quam numquam, iste nulla quaerat sequi obcaecati eaque excepturi facilis minus magnam vel voluptate asperiores ea pariatur corrupti quibusdam! Expedita a dolore autem sint! Distinctio omnis error aut, saepe quo adipisci, inventore consequuntur vitae nihil corrupti excepturi, doloribus repellendus. Molestias repudiandae iure quaerat dicta, quisquam ipsam totam sit fugiat minus quo. Nostrum repellendus, assumenda nesciunt illo rem officiis, non quidem tempora dolorem fuga dignissimos corporis explicabo deleniti? Ipsum, provident pariatur dolorum eveniet nisi sunt tempora eligendi voluptate id cum! Enim magni voluptates quam accusamus.</p>
+        <section class="home__hero">
+            <img class="home__hero-leftDisc" src="images/home/disk-left.png" alt="">
+            <img class="home__hero-bottomDisc" src="images/home/disk-bottom.png" alt="">
+            <div class="container">
+                <div class="home__hero-wrapper">
+                    <div class="home__heroText-large">
+                    <h1>Find the best <span>talent</span></h1>
+                    </div>
+                    <div class="home__heroText-small">
+                        <p>Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home__teams">
+            <div class="container">
+                <div class="home__teams-wrapper">
+                    <div class="home__teams-left">
+                        Build & manage distributed teams like no one else.
+                    </div>
+                    <div class="home__teams-right">
+                        <div class="home__teams-card">
+                            <img src="" alt="">
+                            <div class="text">
+                                <h5>Experienced Individuals</h5>
+                                <p>Our network is made up of highly experienced professionals who are passionate about what they do.</p>
+                            </div>
+                        </div>
+                        <div class="home__teams-card">
+                            <img src="" alt="">
+                            <div class="text">
+                                <h5>Easy to Implement</h5>
+                                <p>Our processes have been refined over years of implementation meaning our teams always deliver.</p>
+                            </div>
+                        </div>
+                        <div class="home__teams-card">
+                            <img src="" alt="">
+                            <div class="text">
+                                <h5>Enhanced Productivity</h5>
+                                <p>Our customized platform with in-built analytics helps you manage your distributed teams.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
+<script src="js/script.js"></script>
 </html>

@@ -1,3 +1,19 @@
+:root{
+    --bgColor-light: #014E56;
+    --bgColor-medium: #004047;
+    --bgColor-dark: #012F34;
+    --bgColor-darker: #002529;
+    --fontColor-white: #FFFFFF;
+    --fontColor-pink: #F67E7E;
+    --fontColor-green: #79C8C7;
+    --fontColor-dark: #012F34;
+    --fontSize-15: 15px;
+    --fontSize-18: 18px;
+    --fontSize-40: 40px;
+    --fontSize-48: 48px;
+    --fontSize-64: 64px;
+    --fontSize-100: 100px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +22,9 @@
 *::before, 
 *::after{
     box-sizing: border-box;
+}
+body{
+    font-family: 'Livvic';
 }
 a{
     text-decoration: none;

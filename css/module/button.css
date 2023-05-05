@@ -1,0 +1,16 @@
+button{
+    width: 153px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 24px;
+    border: 2px solid;
+    outline: none;
+    font-size: var(--fontSize-18);
+    font-family: 'Livvic';
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
