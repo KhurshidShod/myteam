@@ -77,6 +77,8 @@
     justify-content: center;
     align-items: center;
     background-color: var(--bgColor-medium);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .about__directors-wrapper {
@@ -212,6 +214,8 @@
 .about__clients {
     min-height: 50vh;
     background-color: var(--bgColor-dark);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .about__clients-content h1 {
@@ -241,20 +245,26 @@
 }
 
 .about__start {
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
     min-height: 30vh;
     background-color: var(--fontColor-pink);
+    position: relative;
 }
 
-.about__start-content {
-    background-color: red;
+.about__start .container__img-5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.about__start-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    min-height: 30vh;
 }
 
 .about__start-wrapper a {
-    background-color: green;
     font-weight: 600;
     font-size: var(--fontSize-18);
     color: var(--bgColor-dark);
@@ -265,20 +275,6 @@
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-}
-
-.container__img-5 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.about__start-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: blue;
 }
 
 .about__start-content h1 {
