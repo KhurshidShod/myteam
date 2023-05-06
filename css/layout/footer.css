@@ -1,0 +1,111 @@
+footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--bgColor-darker);
+}
+
+.footer-left {
+    display: flex;
+}
+
+.footer-content a:hover{
+    color: var(--fontColor-pink);
+    transition: .1s linear;
+    -webkit-transition: .1s linear;
+    -moz-transition: .1s linear;
+    -ms-transition: .1s linear;
+    -o-transition: .1s linear;
+}
+
+.footer-content h1 {
+    color: var(--fontColor-white);
+    font-size: var(--fontSize-40);
+    margin-bottom: 20px;
+}
+
+.footer-content a {
+    color: var(--fontColor-white);
+    font-size: var(--fontSize-18);
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.footer-p {
+    font-weight: 600;
+    font-size: var(--fontSize-15);
+    color: var(--fontColor-white);
+    margin-left: 120px;
+}
+
+.footer-p{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.footer-i {
+    padding-left: 165px;
+}
+
+.footer-i i {
+    width: 30px;
+    cursor: pointer;
+    color: var(--fontColor-white);
+}
+
+.footer-text h3 {
+    color: var(--fontColor-white);
+    font-size: var(--fontSize-15);
+    font-weight: 600;
+    margin-top: 70px;
+}
+
+@media (max-width: 900px) {
+    .footer-wrapper {
+    gap: 2rem;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    }
+    .footer-content a{
+        margin: 0;
+        margin-right: 10px;
+    }
+    .footer-i{
+        padding: 0;
+    }
+    .footer-text h3{
+        margin: 0;
+    }
+    .footer-right{
+        width: 100%;
+    }
+    .footer-right{
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+}
+@media (max-width: 550px) {
+    .footer-left{
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+    }
+    .footer-p,
+    .footer-content{
+        margin: 0;
+        width: 100%;
+    }
+}
