@@ -33,6 +33,9 @@ a{
 input:focus{
     outline: none;
 }
+input {
+    cursor: pointer;
+}
 li{
     list-style: none;
 }
