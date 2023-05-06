@@ -76,7 +76,141 @@
     font-weight: 700;
     font-size: var(--fontSize-100);
 }
+.home__teams {
+    background-color: var(--bgColor-dark);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home__teams .home__teams-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    gap: 5rem;
+}
+.home__teams .home__teams-wrapper .home__teams-left{
+    width: 445px;
+}
+.home__teams .home__teams-wrapper .home__teams-left h1{
+    font-size: var(--fontSize-48);
+    line-height: 48px;
+    font-weight: 700;
+    color: var(--fontColor-white);
+    position: relative;
+}
+.home__teams .home__teams-wrapper .home__teams-right{
+    max-width: 550px;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home__teams .home__teams-wrapper .home__teams-right .home__teams-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 100%;
+}
+.home__teams .home__teams-wrapper .home__teams-right .home__teams-card img{
+    width: 72px;
+    height: 72px;
+}
+.home__teams .home__teams-wrapper .home__teams-right .home__teams-card h5{
+    font-size: var(--fontSize-18);
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--fontColor-pink);
+}
+.home__teams .home__teams-wrapper .home__teams-right .home__teams-card p{
+    font-size: var(--fontSize-15);
+    font-weight: 600;
+    line-height: 25px;
+    color: var(--fontColor-white);
+}
+.home__teams .home__teams-wrapper .home__teams-left h1::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: var(--fontColor-pink);
+}
+.about__start {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--fontColor-pink);
+    position: relative;
+}
 
+.about__start .container__img-5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.about__start-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.about__start-wrapper a {
+    font-weight: 600;
+    font-size: var(--fontSize-18);
+    color: var(--bgColor-dark);
+    padding: 10px 30px;
+    border: 2px solid var(--bgColor-dark);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.about__start-wrapper a:hover{
+    background-color: var(--bgColor-dark);
+    color: var(--fontColor-white);
+    transition: .1s linear;
+    -webkit-transition: .1s linear;
+    -moz-transition: .1s linear;
+    -ms-transition: .1s linear;
+    -o-transition: .1s linear;
+}
+
+.container__img-5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.about__start-wrapper {
+    width: 100%;
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    align-items: center;
+}
+
+.about__start-content h1 {
+    font-size: var(--fontSize-48);
+    color: var(--bgColor-dark);
+    font-weight: 700;
+}
+/*==================================RESPONSIVE==================================*/
+
+@media (max-width: 1150px) {
+    .home__hero{
+        padding-top: 80px;
+    }
+}
 @media (max-width: 900px) {
     .home__hero-wrapper{
         flex-direction: column;
@@ -105,6 +239,22 @@
     .home__heroText-small p{
         min-height: 0;
     }
+    .home__teams .home__teams-wrapper{
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        gap: 2rem;
+    }
+    .home__teams .home__teams-wrapper .home__teams-left,
+    .home__teams .home__teams-wrapper .home__teams-right{
+        width: 100% !important;
+    }
+    .home__teams .home__teams-wrapper .home__teams-left h1{
+        font-size: var(--fontSize-32);
+    }
 }
 @media (max-width: 550px) {
     .home__hero-wrapper{
@@ -127,5 +277,12 @@
     .home__heroText-large h1{
         max-width: 400px;
         font-size: var(--fontSize-64);
+    }
+    .home__teams .home__teams-wrapper .home__teams-right .home__teams-card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 0;
     }
 }

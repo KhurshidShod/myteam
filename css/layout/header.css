@@ -54,9 +54,33 @@ header nav ul li a{
     font-weight: 600;
     color: var(--fontColor-white);
     line-height: 28px;
+    transition: .1s linear;
+    -webkit-transition: .1s linear;
+    -moz-transition: .1s linear;
+    -ms-transition: .1s linear;
+    -o-transition: .1s linear;
+}
+header nav ul li a:hover{
+    color: var(--fontColor-pink);
 }
 header nav .header__contact-btn{
     border-color: var(--fontColor-white);
+}
+header nav .header__contact-btn:hover{
+    background-color: var(--fontColor-white);
+    transition: .1s linear;
+    -webkit-transition: .1s linear;
+    -moz-transition: .1s linear;
+    -ms-transition: .1s linear;
+    -o-transition: .1s linear;
+}
+header nav .header__contact-btn:hover a{
+    color: var(--bgColor-light);
+    transition: .1s linear;
+    -webkit-transition: .1s linear;
+    -moz-transition: .1s linear;
+    -ms-transition: .1s linear;
+    -o-transition: .1s linear;
 }
 header nav .header__contact-btn a{
     color: var(--fontColor-white);
