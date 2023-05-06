@@ -323,7 +323,7 @@
 
 @media (max-width: 1000px) {
     .about__start-wrapper {
-        flex-direction: column;
+        flex-direction: column !important;
     }
     .about__start-content h1 {
         font-size: var(--fontSize-40);
@@ -373,15 +373,15 @@
     .about__directors-card6 {
         margin-bottom: 70px;
     }
-    .about__start-wrapper{
-        display: flex !important;
-        flex-direction: column !important; 
-    }
 }
 
 @media (max-width: 650px) {
     .about__start-wrapper a {
         margin-bottom: 20px;
+    }
+    .about__start-content{
+        width: 100%;
+        text-align: center;
     }
 }
 
