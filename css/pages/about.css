@@ -303,6 +303,8 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .about__start-content h1 {
@@ -370,6 +372,10 @@
     }
     .about__directors-card6 {
         margin-bottom: 70px;
+    }
+    .about__start-wrapper{
+        display: flex !important;
+        flex-direction: column !important; 
     }
 }
 

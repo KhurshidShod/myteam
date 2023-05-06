@@ -204,6 +204,81 @@
     color: var(--bgColor-dark);
     font-weight: 700;
 }
+.about__stories{
+    background-color: var(--bgColor-medium);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.about__stories-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+}
+.about__stories-wrapper h1{
+    font-size: var(--fontSize-48);
+    color: var(--fontColor-white);
+    max-width: 932px;
+    line-height: 48px;
+    font-weight: 700;
+}
+.about__stories-wrapper h1 span{
+    color: var(--fontColor-green);
+}
+.about__stories-wrapper .about__stories-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.about__stories-wrapper .about__stories-cards .about__stories-card{
+    width: calc(100% / 3 - 1rem);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding-top: 1.75rem !important;
+    padding: 1rem;
+}
+.about__stories-wrapper .about__stories-cards .about__stories-card img:first-child{
+    width: 67px;
+    top: 0;
+    height: 56px;
+    position: absolute;
+    z-index: 1;
+}
+.about__stories-wrapper .about__stories-cards .about__stories-card img:last-child{
+    width: 62px;
+    height: 62px;
+}
+.about__stories-wrapper .about__stories-cards .about__stories-card p:nth-child(2){
+    z-index: 2;
+    font-size: var(--fontSize-15);
+    color: var(--fontColor-white);
+    font-weight: 600;
+    line-height: 25px;
+}
+.about__stories-wrapper .about__stories-cards .about__stories-card p:last-child{
+    font-size: var(--fontSize-13);
+    color: var(--fontColor-white);
+    line-height: 18px;
+    font-weight: 400;
+}
+.about__stories-wrapper .about__stories-cards .about__stories-card h4{
+    font-size: var(--fontSize-18);
+    color: var(--fontColor-green);
+    line-height: 28px;
+    font-weight: 700;
+}
 /*==================================RESPONSIVE==================================*/
 
 @media (max-width: 1150px) {
@@ -255,6 +330,9 @@
     .home__teams .home__teams-wrapper .home__teams-left h1{
         font-size: var(--fontSize-32);
     }
+    .about__stories-wrapper .about__stories-card{
+        width: calc(100% / 2 - 1rem) !important;
+    }
 }
 @media (max-width: 550px) {
     .home__hero-wrapper{
@@ -284,5 +362,14 @@
         align-items: center;
         text-align: center;
         gap: 0;
+    }
+    .about__stories-wrapper h1{
+        font-size: var(--fontSize-32);
+    }
+}
+@media (max-width: 700px) {
+    .about__stories-wrapper .about__stories-card{
+        width: 100% !important;
+        max-width: 350px;
     }
 }
